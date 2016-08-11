@@ -2,7 +2,7 @@
 //  STUtilities.h
 //  STUtilities
 //
-//  Created by 李晓春 on 16/8/11.
+//  Created by Sola on 16/8/11.
 //  Copyright © 2016年 tscc-sola. All rights reserved.
 //
 
