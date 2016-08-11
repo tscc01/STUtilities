@@ -25,6 +25,6 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <STSafeCategory/STSafeCategory.h>
 #import <Toast/UIView+Toast.h>
-#import "JSONKit/JSONKit.h"
+#import "JSONKit.h"
 
 #endif /* STUtilities_h */
