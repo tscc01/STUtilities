@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "STUtilities"
   s.version      = "0.0.1"
-  s.summary      = "A short description of STUtilities."
+  s.summary      = "A package of useful codes to start a project quickly."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,31 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  A package of useful codes to start a project quickly.
+  Now it contains:
+  1.Base64
+  2.JSONKit
+  3.CocoaSecurity
+  4.SQLCipher
+  5.LKDBHelper
+  6.STSafeCategory
+  7.MJRefresh
+  8.IQKeyboardManager
+  9.PureLayout
+  10.DeviceUtil
+  11.AFNetworking
+  12.SDWebImage
+  13.Toast
+  14.NSDate-Extensions
+  15.KDCycleBannerView
+  16.GZIP
+  17.MYBlurIntroductionView
+  18.NJKWebViewProgress
+  19.SCViewShaker
+  20.Other
                    DESC
 
-  s.homepage     = "http://EXAMPLE/STUtilities"
+  s.homepage     = "https://github.com/tscc01/STUtilities"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +60,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -64,7 +86,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +101,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/STUtilities.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/tscc01/STUtilities.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +112,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "STUtilities/STUtilities", "STUtilities/STUtilities/STUtilities/*.{h,m}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -132,6 +154,23 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency 'Base64', '~> 1.1.2'
+  s.dependency 'CocoaSecurity', '~> 1.2.4'
+  s.dependency 'SQLCipher', '~> 3.1.0'
+  s.dependency 'LKDBHelper', '~> 2.3'
+  s.dependency 'STSafeCategory', '~> 0.0.2'
+  s.dependency 'MJRefresh', '~> 3.1.12'
+  s.dependency 'IQKeyboardManager', '~> 3.2.2'
+  s.dependency 'PureLayout', '~> 2.0.5'
+  s.dependency 'DeviceUtil', '~> 1.2'
+  s.dependency 'AFNetworking', '~> 2.5'
+  s.dependency 'SDWebImage', '~> 3.7.5'
+  s.dependency 'Toast', '~> 2.4'
+  s.dependency 'NSDate-Extensions', '~> 0.0.1'
+  s.dependency 'KDCycleBannerView', '~> 1.1.1'
+  s.dependency 'GZIP', '~> 1.1.1'
+  s.dependency 'MYBlurIntroductionView', '~> 1.0.3'
+  s.dependency 'NJKWebViewProgress', '~> 0.2.3'
+  s.dependency 'SCViewShaker', '~> 1.0.2'
 
 end
