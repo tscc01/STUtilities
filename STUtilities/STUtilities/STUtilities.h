@@ -20,7 +20,7 @@
 #import <MJRefresh/MJRefresh.h>
 #import <MYBlurIntroductionView/MYBlurIntroductionView.h>
 #import <NJKWebViewProgress/NJKWebViewProgress.h>
-#import <NSDate-Extensions/NSDate-Utilities.h>
+//#import <NSDate-Extensions/NSDate-Utilities.h>
 #import <PureLayout/PureLayout.h>
 #import <SCViewShaker/UIView+Shake.h>
 #import <SDWebImage/UIImageView+WebCache.h>
