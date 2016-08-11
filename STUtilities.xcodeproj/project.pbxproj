@@ -14,6 +14,7 @@
 		43F72BCB1D5C2BF10047E209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F72BC91D5C2BF10047E209 /* Main.storyboard */; };
 		43F72BCD1D5C2BF10047E209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F72BCC1D5C2BF10047E209 /* Assets.xcassets */; };
 		43F72BD01D5C2BF10047E209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F72BCE1D5C2BF10047E209 /* LaunchScreen.storyboard */; };
+		43F72BFF1D5C61960047E209 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72BFE1D5C61960047E209 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		43F72BCF1D5C2BF10047E209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43F72BD11D5C2BF10047E209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43F72BD81D5C53640047E209 /* STUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STUtilities.h; sourceTree = "<group>"; };
+		43F72BFD1D5C61960047E209 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		43F72BFE1D5C61960047E209 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		4C55BC1BA286C80F78BAD7BC /* Pods-STUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E61CD20F6C5BEFED1EAAA9 /* Pods-STUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +95,18 @@
 			isa = PBXGroup;
 			children = (
 				43F72BD81D5C53640047E209 /* STUtilities.h */,
+				43F72BFC1D5C61960047E209 /* JSONKit */,
 			);
 			path = STUtilities;
+			sourceTree = "<group>";
+		};
+		43F72BFC1D5C61960047E209 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				43F72BFD1D5C61960047E209 /* JSONKit.h */,
+				43F72BFE1D5C61960047E209 /* JSONKit.m */,
+			);
+			path = JSONKit;
 			sourceTree = "<group>";
 		};
 		592555FF9C22F8ADE8174A4C /* Frameworks */ = {
@@ -236,6 +249,7 @@
 			files = (
 				43F72BC81D5C2BF10047E209 /* ViewController.m in Sources */,
 				43F72BC51D5C2BF10047E209 /* AppDelegate.m in Sources */,
+				43F72BFF1D5C61960047E209 /* JSONKit.m in Sources */,
 				43F72BC21D5C2BF10047E209 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
