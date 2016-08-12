@@ -112,20 +112,93 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "STUtilities/STUtilities/*.{h,m}", "STUtilities/STUtilities/STContext/*.{h,m}"
-
+  s.source_files  = "STUtilities/STUtilities/*.{h,m}"
   s.subspec 'STContext' do |ss|
+    ss.platform     = :ios, "7.0"
+
     ss.source_files =  "STUtilities/STUtilities/STContext/*.{h,m}"
   end
 
-  s.subspec 'Category' do |ss|
-    ss.source_files =  "STUtilities/STUtilities/Category/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView/*.{h,m}"
-  end
-
   s.subspec 'BasicUtility' do |ss|
+    ss.platform     = :ios, "7.0"
+
     ss.dependency 'STUtilities/STContext'
     ss.source_files =  "STUtilities/STUtilities/BasicUtility/*.{h,m}"
 
+  end
+
+  s.subspec 'Category' do |ss|
+    ss.platform     = :ios, "7.0"
+
+    ss.subspec 'NSMutableAttributedString+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.source_files = "STUtilities/STUtilities/Category/NSMutableAttributedString+ST.{h,m}"
+    end
+
+    ss.subspec 'NSObject+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.source_files = "STUtilities/STUtilities/Category/NSObject+ST.{h,m}"
+    end
+
+    ss.subspec 'UIImage+animatedGIF' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.source_files = "STUtilities/STUtilities/Category/UIImage+animatedGIF.{h,m}"
+    end
+
+    ss.subspec 'UIView+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.source_files = "STUtilities/STUtilities/Category/UIView+ST.{h,m}"
+    end
+
+    ss.subspec 'UITableViewCell+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.dependency 'STUtilities/Category/UIView+ST'
+      sss.source_files = "STUtilities/STUtilities/Category/UITableViewCell+ST.{h,m}"
+    end
+
+    ss.subspec 'UIColor+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.source_files = "STUtilities/STUtilities/Category/UIColor+ST.{h,m}"
+    end
+
+    ss.subspec 'UIViewController+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.source_files = "STUtilities/STUtilities/Category/UIViewController+ST.{h,m}"
+    end
+
+    ss.subspec 'UINavigationController+ST' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.dependency 'STUtilities/Category/NSObject+ST'
+      sss.source_files = "STUtilities/STUtilities/Category/UINavigationController+ST.{h,m}"
+    end
+
+    ss.subspec 'UIViewController+SplashView' do |sss|
+      sss.platform     = :ios, "7.0"
+      sss.dependency 'STUtilities/Category/UIColor+ST'
+      sss.dependency 'STUtilities/Category/UIView+ST'
+      sss.dependency 'STUtilities/Category/UIImage+animatedGIF'
+
+      sss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/*.{h,m}"
+      sss.subspec 'HUDProgressView' do |ssss|
+        ssss.platform     = :ios, "7.0"
+        ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView/*.{h,m}"
+      end
+
+      sss.subspec 'LoadingSplashView' do |ssss|
+        ssss.platform     = :ios, "7.0"
+        ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView/*.{h,m}"
+      end
+
+      sss.subspec 'NoneDataView' do |ssss|
+        ssss.platform     = :ios, "7.0"
+        ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView/*.{h,m}"
+      end
+
+      sss.subspec 'SplashFailedView' do |ssss|
+        ssss.platform     = :ios, "7.0"
+        ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView/*.{h,m}"
+      end
+    end
   end
 
 

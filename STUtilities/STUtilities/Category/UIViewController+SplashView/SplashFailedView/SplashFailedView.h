@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+SplashView.h"
+
+@protocol SplashFailedViewDelegate <NSObject>
+@optional
+- (void)st_reloadData;
+
+@end
 
 @interface SplashFailedView : UIView
 
