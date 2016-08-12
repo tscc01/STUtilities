@@ -112,15 +112,23 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "STUtilities/STUtilities", "STUtilities/STUtilities/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/BasicUtility", "STUtilities/STUtilities/BasicUtility/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/Category", "STUtilities/STUtilities/Category/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView", "STUtilities/STUtilities/Category/UIViewController+SplashView/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView", "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView", "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView", "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView", "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView/*.{h,m}"
-  s.source_files  = "STUtilities/STUtilities/STContext", "STUtilities/STUtilities/STContext/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/*.{h,m}", "STUtilities/STUtilities/STContext/*.{h,m}"
+
+  s.subspec 'STContext' do |ss|
+    ss.source_files =  "STUtilities/STUtilities/STContext/*.{h,m}"
+  end
+
+  s.subspec 'Category' do |ss|
+    ss.source_files =  "STUtilities/STUtilities/Category/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView/*.{h,m}", "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView/*.{h,m}"
+  end
+
+  s.subspec 'BasicUtility' do |ss|
+    ss.dependency 'STUtilities/STContext'
+    ss.source_files =  "STUtilities/STUtilities/BasicUtility/*.{h,m}"
+
+  end
+
+
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

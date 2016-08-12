@@ -10,11 +10,10 @@
 #import <objc/runtime.h>
 #import "LoadingSplashView.h"
 #import "SplashFailedView.h"
-#import "STUtilities.h"
 #import "NoneDataView.h"
 #import <PureLayout/PureLayout.h>
 #import "HUDProgressView.h"
-
+#import "UIView+ST.h"
 
 @interface UIViewController (SplashViewHolder)
 

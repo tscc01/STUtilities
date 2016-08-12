@@ -7,7 +7,7 @@
 //
 
 #import "BasicUtility+TableView.h"
-#import "STUtilities.h"
+#import "STContext.h"
 
 @implementation BasicUtility (TableView)
 

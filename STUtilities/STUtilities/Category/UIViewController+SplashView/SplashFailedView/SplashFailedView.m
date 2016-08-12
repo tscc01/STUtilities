@@ -7,7 +7,7 @@
 //
 
 #import "SplashFailedView.h"
-#import "STUtilities.h"
+#import "UIColor+ST.h"
 
 @interface SplashFailedView ()
 
