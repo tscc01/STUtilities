@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "STUtilities"
-  s.version      = "0.0.1"
-  s.summary      = "A package of useful codes to start a project quickly."
+  s.version      = "0.0.2"
+  s.summary      = "A package of useful codes to start a project quickly, private use."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  A package of useful codes to start a project quickly.
+  A package of useful codes to start a project quickly, private use.
   Now it contains:
   1.Base64
   2.JSONKit
@@ -112,7 +112,15 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "STUtilities/STUtilities", "STUtilities/STUtilities/STUtilities/**/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities", "STUtilities/STUtilities/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/BasicUtility", "STUtilities/STUtilities/BasicUtility/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/Category", "STUtilities/STUtilities/Category/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView", "STUtilities/STUtilities/Category/UIViewController+SplashView/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView", "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView", "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView", "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView", "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView/*.{h,m}"
+  s.source_files  = "STUtilities/STUtilities/STContext", "STUtilities/STUtilities/STContext/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

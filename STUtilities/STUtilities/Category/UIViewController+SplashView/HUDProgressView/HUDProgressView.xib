@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HUDProgressView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPK-vD-ild">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="VAc-nn-tjX">
+                            <rect key="frame" x="250" y="175" width="100" height="100"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFC-6S-jhL">
+                    <rect key="frame" x="250" y="175" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="l7j-9W-1sf"/>
+                        <constraint firstAttribute="height" constant="100" id="lES-Fp-I9g"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VAc-nn-tjX" firstAttribute="centerY" secondItem="sFC-6S-jhL" secondAttribute="centerY" id="2o9-Iz-hZJ"/>
+                <constraint firstItem="TPK-vD-ild" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gq2-sB-ojt"/>
+                <constraint firstItem="sFC-6S-jhL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="3:4" id="Lwo-kf-Ivb"/>
+                <constraint firstItem="sFC-6S-jhL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ptm-q6-yvY"/>
+                <constraint firstItem="VAc-nn-tjX" firstAttribute="width" secondItem="sFC-6S-jhL" secondAttribute="width" id="cns-J1-Z8i"/>
+                <constraint firstItem="VAc-nn-tjX" firstAttribute="centerX" secondItem="sFC-6S-jhL" secondAttribute="centerX" id="lZj-y9-dwX"/>
+                <constraint firstItem="VAc-nn-tjX" firstAttribute="height" secondItem="sFC-6S-jhL" secondAttribute="height" id="lfQ-Cd-w0M"/>
+                <constraint firstAttribute="bottom" secondItem="TPK-vD-ild" secondAttribute="bottom" id="r5i-ZT-d2y"/>
+                <constraint firstAttribute="trailing" secondItem="TPK-vD-ild" secondAttribute="trailing" id="vPq-Fk-RGc"/>
+                <constraint firstItem="TPK-vD-ild" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yQ9-fe-Elj"/>
+            </constraints>
+            <connections>
+                <outlet property="imageGif" destination="sFC-6S-jhL" id="pdP-TH-fp3"/>
+            </connections>
+        </view>
+    </objects>
+</document>
