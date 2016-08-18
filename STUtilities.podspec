@@ -163,6 +163,7 @@ Pod::Spec.new do |s|
 
     ss.subspec 'UIViewController+ST' do |sss|
       sss.platform     = :ios, "7.0"
+      sss.dependency 'STUtilities/Category/NSObject+ST'
       sss.source_files = "STUtilities/STUtilities/Category/UIViewController+ST.{h,m}"
     end
 
