@@ -15,7 +15,7 @@ NSInteger TNAmountMaxLengthWithDecimalPoint = 13;
 
 
 - (BOOL)checkString:(NSString *)string whetherMathchRegularExpression:(NSString *)regularExpression {
-    NSRegularExpression* regex = [self regularExpressionWithString:string];
+    NSRegularExpression* regex = [self regularExpressionWithString:regularExpression];
     if (!regex) {
         return NO;
     }
