@@ -1,25 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingSplashView">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="GsT-qB-X2z">
-                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                    <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                 </activityIndicatorView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UGA-mO-Pb8">
+                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Bjg-6e-Y3e"/>
+                        <constraint firstAttribute="width" constant="100" id="e8g-5b-Ldk"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="GsT-qB-X2z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AfR-6j-4qr"/>
                 <constraint firstItem="GsT-qB-X2z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EbH-Jd-jQQ"/>
+                <constraint firstItem="UGA-mO-Pb8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FW4-2M-Nti"/>
+                <constraint firstItem="UGA-mO-Pb8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ef0-sV-1p6"/>
             </constraints>
+            <connections>
+                <outlet property="imgView" destination="UGA-mO-Pb8" id="Znn-gE-egw"/>
+                <outlet property="indicator" destination="GsT-qB-X2z" id="nLA-Q6-WhU"/>
+            </connections>
         </view>
     </objects>
 </document>

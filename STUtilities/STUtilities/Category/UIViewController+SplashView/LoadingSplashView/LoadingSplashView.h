@@ -12,4 +12,8 @@
 
 - (void)setLoading:(BOOL)bLoading;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+
 @end
