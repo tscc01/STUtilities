@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "STUtilities"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A package of useful codes to start a project quickly, private use."
 
   # This description is used to generate tags and improve search results.
