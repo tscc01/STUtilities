@@ -146,6 +146,7 @@ static const void *TimerSplashStatusKey= &TimerSplashStatusKey;
     
     if (!self.st_viewSplash) {
         self.st_viewSplash = [LoadingSplashView viewFromNib];
+        self.st_viewSplash.frame = [UIScreen mainScreen].bounds;
     }
     
     [self.st_viewSplash setLoading:YES];
@@ -209,7 +210,7 @@ static const void *TimerSplashStatusKey= &TimerSplashStatusKey;
     }
     
     self.st_viewHud = [HUDProgressView viewFromNib];
-    self.st_viewHud.frame = self.view.frame;
+    self.st_viewHud.frame = [UIScreen mainScreen].bounds;
     
     if (self.tabBarController) {
         [self.tabBarController.view addSubview:self.st_viewHud];
