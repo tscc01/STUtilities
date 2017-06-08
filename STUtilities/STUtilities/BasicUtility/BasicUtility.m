@@ -107,9 +107,7 @@
             dicReturn[strKey] = [self changeArrayFormat:dicInfo[strKey]];
         }
         else if ([dicInfo[strKey] isKindOfClass:[NSString class]]) {
-            if ([dicInfo[strKey] length]) {
-                dicReturn[strKey] = dicInfo[strKey];
-            }
+            dicReturn[strKey] = dicInfo[strKey];
         }
         else if ([dicInfo[strKey] isKindOfClass:[NSNull class]]) {
             //do nothing
@@ -133,9 +131,7 @@
             [arrayReturn addObject:[self changeArrayFormat:item]];
         }
         else if ([item isKindOfClass:[NSString class]]) {
-            if ([item length]) {
-                [arrayReturn addObject:item];
-            }
+            [arrayReturn addObject:item];
         }
         else if ([item isKindOfClass:[NSNull class]]) {
             //do nothing
