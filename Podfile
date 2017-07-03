@@ -4,7 +4,7 @@ target 'STUtilities' do
 
 pod 'Base64', '~> 1.1.2'
 pod 'CocoaSecurity', '~> 1.2.4'
-pod 'SQLCipher', '~> 3.1.0'
+pod 'FMDB/SQLCipher'
 pod 'LKDBHelper', '~> 2.3'
 pod 'STSafeCategory', '~> 0.0.2'
 pod 'MJRefresh', '~> 3.1.12'
