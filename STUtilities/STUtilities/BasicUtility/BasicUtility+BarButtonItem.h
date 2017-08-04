@@ -1,9 +1,9 @@
 //
 //  BasicUtility+BarButtonItem.h
-//  TengNiu
+//  HaoYa
 //
 //  Created by Sola on 15/4/21.
-//  Copyright (c) 2015年 Teng Niu. All rights reserved.
+//  Copyright (c) 2015年 Hao Ya. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
