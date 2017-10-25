@@ -14,7 +14,7 @@
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <DeviceUtil/DeviceUtil.h>
 #import <GZIP/GZIP.h>
-#import <IQKeyboardManager/KeyboardManager.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 #import <KDCycleBannerView/KDCycleBannerView.h>
 #import <LKDBHelper/LKDBHelper.h>
 #import <MJRefresh/MJRefresh.h>
