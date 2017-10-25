@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "STUtilities"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A package of useful codes to start a project quickly, private use."
 
   # This description is used to generate tags and improve search results.
@@ -250,12 +250,12 @@ Pod::Spec.new do |s|
   s.dependency 'LKDBHelper', '~> 2.3'
   s.dependency 'STSafeCategory', '~> 0.0.2'
   s.dependency 'MJRefresh', '~> 3.1.12'
-  s.dependency 'IQKeyboardManager', '~> 3.2.2'
-  s.dependency 'PureLayout', '~> 2.0.5'
-  s.dependency 'DeviceUtil', '~> 1.2'
-  s.dependency 'AFNetworking', '~> 2.5'
-  s.dependency 'SDWebImage', '~> 3.7.5'
-  s.dependency 'Toast', '~> 2.4'
+  s.dependency 'IQKeyboardManager', '~> 4.0.0'
+  s.dependency 'PureLayout', '~> 3.0.2'
+  s.dependency 'DeviceUtil', '~> 2.0.1'
+  s.dependency 'AFNetworking', '~> 3.1.0'
+  s.dependency 'SDWebImage', '~> 4.1.0'
+  s.dependency 'Toast', '~> 3.0'
   s.dependency 'NSDate-Extensions', '~> 0.0.1'
   s.dependency 'KDCycleBannerView', '~> 1.1.1'
   s.dependency 'GZIP', '~> 1.1.1'
