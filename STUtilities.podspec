@@ -43,9 +43,8 @@ Pod::Spec.new do |s|
   14.KDCycleBannerView
   15.GZIP
   16.MYBlurIntroductionView
-  17.NJKWebViewProgress
-  18.SCViewShaker
-  19.Other
+  17.SCViewShaker
+  18.Other
                    DESC
 
   s.homepage     = "https://github.com/tscc01/STUtilities"
@@ -247,7 +246,6 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaSecurity'
   s.dependency 'SQLCipher'
   s.dependency 'LKDBHelper'
-  s.dependency 'STSafeCategory'
   s.dependency 'MJRefresh'
   s.dependency 'IQKeyboardManager'
   s.dependency 'PureLayout'
@@ -259,7 +257,6 @@ Pod::Spec.new do |s|
   s.dependency 'KDCycleBannerView'
   s.dependency 'GZIP'
   s.dependency 'MYBlurIntroductionView'
-  s.dependency 'NJKWebViewProgress'
   s.dependency 'SCViewShaker'
 
 end

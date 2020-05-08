@@ -20,7 +20,6 @@
 		43F72C101D5D743F0047E209 /* BasicUtility+ECUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C091D5D743F0047E209 /* BasicUtility+ECUtility.m */; };
 		43F72C111D5D743F0047E209 /* BasicUtility+Regular.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C0B1D5D743F0047E209 /* BasicUtility+Regular.m */; };
 		43F72C121D5D743F0047E209 /* BasicUtility+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C0D1D5D743F0047E209 /* BasicUtility+TableView.m */; };
-		43F72C161D5D746F0047E209 /* STContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C151D5D746F0047E209 /* STContext.m */; };
 		43F72C3B1D5D758C0047E209 /* NSMutableAttributedString+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C191D5D758C0047E209 /* NSMutableAttributedString+ST.m */; };
 		43F72C3C1D5D758C0047E209 /* NSObject+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C1B1D5D758C0047E209 /* NSObject+ST.m */; };
 		43F72C3D1D5D758C0047E209 /* UIColor+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C1D1D5D758C0047E209 /* UIColor+ST.m */; };
@@ -38,6 +37,7 @@
 		43F72C4A1D5D758C0047E209 /* UIViewController+SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C381D5D758C0047E209 /* UIViewController+SplashView.m */; };
 		43F72C4B1D5D758C0047E209 /* UIViewController+ST.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C3A1D5D758C0047E209 /* UIViewController+ST.m */; };
 		43F72C4E1D5D75E00047E209 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F72C4D1D5D75E00047E209 /* UIImage+animatedGIF.m */; };
+		FF9D83D2246524F4006DEF2F /* STContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9D83D1246524F4006DEF2F /* STContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +65,6 @@
 		43F72C0B1D5D743F0047E209 /* BasicUtility+Regular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BasicUtility+Regular.m"; sourceTree = "<group>"; };
 		43F72C0C1D5D743F0047E209 /* BasicUtility+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BasicUtility+TableView.h"; sourceTree = "<group>"; };
 		43F72C0D1D5D743F0047E209 /* BasicUtility+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BasicUtility+TableView.m"; sourceTree = "<group>"; };
-		43F72C141D5D746F0047E209 /* STContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STContext.h; sourceTree = "<group>"; };
-		43F72C151D5D746F0047E209 /* STContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STContext.m; sourceTree = "<group>"; };
 		43F72C181D5D758C0047E209 /* NSMutableAttributedString+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+ST.h"; sourceTree = "<group>"; };
 		43F72C191D5D758C0047E209 /* NSMutableAttributedString+ST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+ST.m"; sourceTree = "<group>"; };
 		43F72C1A1D5D758C0047E209 /* NSObject+ST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ST.h"; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		43F72C4D1D5D75E00047E209 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		4C55BC1BA286C80F78BAD7BC /* Pods-STUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 		E0E61CD20F6C5BEFED1EAAA9 /* Pods-STUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities.release.xcconfig"; sourceTree = "<group>"; };
+		FF9D83D0246524F4006DEF2F /* STContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STContext.h; sourceTree = "<group>"; };
+		FF9D83D1246524F4006DEF2F /* STContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				43F72BD81D5C53640047E209 /* STUtilities.h */,
-				43F72C131D5D746F0047E209 /* STContext */,
+				FF9D83CF246524F4006DEF2F /* STContext */,
 				43F72C171D5D758C0047E209 /* Category */,
 				43F72C001D5C678E0047E209 /* BasicUtility */,
 			);
@@ -184,15 +184,6 @@
 				43F72C0D1D5D743F0047E209 /* BasicUtility+TableView.m */,
 			);
 			path = BasicUtility;
-			sourceTree = "<group>";
-		};
-		43F72C131D5D746F0047E209 /* STContext */ = {
-			isa = PBXGroup;
-			children = (
-				43F72C141D5D746F0047E209 /* STContext.h */,
-				43F72C151D5D746F0047E209 /* STContext.m */,
-			);
-			path = STContext;
 			sourceTree = "<group>";
 		};
 		43F72C171D5D758C0047E209 /* Category */ = {
@@ -289,6 +280,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF9D83CF246524F4006DEF2F /* STContext */ = {
+			isa = PBXGroup;
+			children = (
+				FF9D83D0246524F4006DEF2F /* STContext.h */,
+				FF9D83D1246524F4006DEF2F /* STContext.m */,
+			);
+			path = STContext;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,7 +300,6 @@
 				43F72BB91D5C2BF10047E209 /* Sources */,
 				43F72BBA1D5C2BF10047E209 /* Frameworks */,
 				43F72BBB1D5C2BF10047E209 /* Resources */,
-				3E31D480ED4CEC18924C31C6 /* [CP] Embed Pods Frameworks */,
 				CFB5A4C5B6EF14BFA2D93AFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -331,6 +330,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -380,39 +380,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E31D480ED4CEC18924C31C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CFB5A4C5B6EF14BFA2D93AFC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/DeviceUtil/DeviceUtil.bundle,
+				"${PODS_ROOT}/Target Support Files/Pods-STUtilities/Pods-STUtilities-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DeviceUtil/DeviceUtil.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DeviceUtil.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STUtilities/Pods-STUtilities-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STUtilities/Pods-STUtilities-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,7 +409,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F72C161D5D746F0047E209 /* STContext.m in Sources */,
 				43F72C401D5D758C0047E209 /* UIView+ST.m in Sources */,
 				43F72C121D5D743F0047E209 /* BasicUtility+TableView.m in Sources */,
 				43F72BC81D5C2BF10047E209 /* ViewController.m in Sources */,
@@ -444,6 +430,7 @@
 				43F72BC21D5C2BF10047E209 /* main.m in Sources */,
 				43F72C4A1D5D758C0047E209 /* UIViewController+SplashView.m in Sources */,
 				43F72C3C1D5D758C0047E209 /* NSObject+ST.m in Sources */,
+				FF9D83D2246524F4006DEF2F /* STContext.m in Sources */,
 				43F72C0F1D5D743F0047E209 /* BasicUtility+Countdown.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
