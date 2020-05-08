@@ -84,7 +84,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -112,13 +112,13 @@ Pod::Spec.new do |s|
 
   s.source_files  = "STUtilities/STUtilities/*.{h,m}"
   s.subspec 'STContext' do |ss|
-    ss.platform     = :ios, "7.0"
+    ss.platform     = :ios, "9.0"
 
     ss.source_files =  "STUtilities/STUtilities/STContext/*.{h,m}"
   end
 
   s.subspec 'BasicUtility' do |ss|
-    ss.platform     = :ios, "7.0"
+    ss.platform     = :ios, "9.0"
 
     ss.dependency 'STUtilities/STContext'
     ss.source_files =  "STUtilities/STUtilities/BasicUtility/*.{h,m}"
@@ -126,75 +126,75 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Category' do |ss|
-    ss.platform     = :ios, "7.0"
+    ss.platform     = :ios, "9.0"
 
     ss.subspec 'NSMutableAttributedString+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.source_files = "STUtilities/STUtilities/Category/NSMutableAttributedString+ST.{h,m}"
     end
 
     ss.subspec 'NSObject+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.source_files = "STUtilities/STUtilities/Category/NSObject+ST.{h,m}"
     end
 
     ss.subspec 'UIImage+animatedGIF' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.source_files = "STUtilities/STUtilities/Category/UIImage+animatedGIF.{h,m}"
     end
 
     ss.subspec 'UIView+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.source_files = "STUtilities/STUtilities/Category/UIView+ST.{h,m}"
     end
 
     ss.subspec 'UITableViewCell+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.dependency 'STUtilities/Category/UIView+ST'
       sss.source_files = "STUtilities/STUtilities/Category/UITableViewCell+ST.{h,m}"
     end
 
     ss.subspec 'UIColor+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.source_files = "STUtilities/STUtilities/Category/UIColor+ST.{h,m}"
     end
 
     ss.subspec 'UIViewController+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.dependency 'STUtilities/Category/NSObject+ST'
       sss.source_files = "STUtilities/STUtilities/Category/UIViewController+ST.{h,m}"
     end
 
     ss.subspec 'UINavigationController+ST' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.dependency 'STUtilities/Category/NSObject+ST'
       sss.source_files = "STUtilities/STUtilities/Category/UINavigationController+ST.{h,m}"
     end
 
     ss.subspec 'UIViewController+SplashView' do |sss|
-      sss.platform     = :ios, "7.0"
+      sss.platform     = :ios, "9.0"
       sss.dependency 'STUtilities/Category/UIColor+ST'
       sss.dependency 'STUtilities/Category/UIView+ST'
       sss.dependency 'STUtilities/Category/UIImage+animatedGIF'
 
       sss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/*.{h,m}"
       sss.subspec 'HUDProgressView' do |ssss|
-        ssss.platform     = :ios, "7.0"
+        ssss.platform     = :ios, "9.0"
         ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/HUDProgressView/*.{h,m}"
       end
 
       sss.subspec 'LoadingSplashView' do |ssss|
-        ssss.platform     = :ios, "7.0"
+        ssss.platform     = :ios, "9.0"
         ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/LoadingSplashView/*.{h,m}"
       end
 
       sss.subspec 'NoneDataView' do |ssss|
-        ssss.platform     = :ios, "7.0"
+        ssss.platform     = :ios, "9.0"
         ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/NoneDataView/*.{h,m}"
       end
 
       sss.subspec 'SplashFailedView' do |ssss|
-        ssss.platform     = :ios, "7.0"
+        ssss.platform     = :ios, "9.0"
         ssss.source_files = "STUtilities/STUtilities/Category/UIViewController+SplashView/SplashFailedView/*.{h,m}"
       end
     end
