@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "STUtilities"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A package of useful codes to start a project quickly, private use."
 
   # This description is used to generate tags and improve search results.
@@ -32,21 +32,20 @@ Pod::Spec.new do |s|
   3.CocoaSecurity
   4.SQLCipher
   5.LKDBHelper
-  6.STSafeCategory
-  7.MJRefresh
-  8.IQKeyboardManager
-  9.PureLayout
-  10.DeviceUtil
-  11.AFNetworking
-  12.SDWebImage
-  13.Toast
-  14.NSDate-Extensions
-  15.KDCycleBannerView
-  16.GZIP
-  17.MYBlurIntroductionView
-  18.NJKWebViewProgress
-  19.SCViewShaker
-  20.Other
+  6.MJRefresh
+  7.IQKeyboardManager
+  8.PureLayout
+  9.DeviceUtil
+  10.AFNetworking
+  11.SDWebImage
+  12.Toast
+  13.NSDate-Extensions
+  14.KDCycleBannerView
+  15.GZIP
+  16.MYBlurIntroductionView
+  17.NJKWebViewProgress
+  18.SCViewShaker
+  19.Other
                    DESC
 
   s.homepage     = "https://github.com/tscc01/STUtilities"
@@ -244,23 +243,23 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency 'Base64', '~> 1.1.2'
-  s.dependency 'CocoaSecurity', '~> 1.2.4'
-  s.dependency 'SQLCipher', '~> 3.1.0'
-  s.dependency 'LKDBHelper', '~> 2.3'
-  s.dependency 'STSafeCategory', '~> 0.0.2'
-  s.dependency 'MJRefresh', '~> 3.1.12'
-  s.dependency 'IQKeyboardManager', '~> 4.0.0'
-  s.dependency 'PureLayout', '~> 3.0.2'
-  s.dependency 'DeviceUtil', '~> 2.0.1'
-  s.dependency 'AFNetworking', '~> 3.1.0'
-  s.dependency 'SDWebImage', '~> 4.1.0'
-  s.dependency 'Toast', '~> 3.0'
-  s.dependency 'NSDate-Extensions', '~> 0.0.1'
-  s.dependency 'KDCycleBannerView', '~> 1.1.1'
-  s.dependency 'GZIP', '~> 1.1.1'
-  s.dependency 'MYBlurIntroductionView', '~> 1.0.3'
-  s.dependency 'NJKWebViewProgress', '~> 0.2.3'
-  s.dependency 'SCViewShaker', '~> 1.0.2'
+  s.dependency 'Base64'
+  s.dependency 'CocoaSecurity'
+  s.dependency 'SQLCipher'
+  s.dependency 'LKDBHelper'
+  s.dependency 'STSafeCategory'
+  s.dependency 'MJRefresh'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'PureLayout'
+  s.dependency 'DeviceUtil'
+  s.dependency 'AFNetworking'
+  s.dependency 'SDWebImage'
+  s.dependency 'Toast'
+  s.dependency 'NSDate-Extensions'
+  s.dependency 'KDCycleBannerView'
+  s.dependency 'GZIP'
+  s.dependency 'MYBlurIntroductionView'
+  s.dependency 'NJKWebViewProgress'
+  s.dependency 'SCViewShaker'
 
 end
